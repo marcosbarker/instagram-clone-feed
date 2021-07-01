@@ -1,5 +1,20 @@
+import React from 'react';
+import {Image} from 'react-native';
 import { createAppContainer, createStackNavigator } from 'react-navigation'
 
+import logo from './assets/instagram.png';
+
+import Feed from './pages/Feed';
+
 const Routes = createAppContainer(
-  createStackNavigator({})
+  createStackNavigator({
+    Feed
+  }, {
+    defaultNavigationOptions: {
+      headerTile: <Image source={logo} />
+
+    }
+  })
 );
+
+export default Routes;
