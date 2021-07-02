@@ -11,9 +11,12 @@ const Routes = createAppContainer(
     Feed
   }, {
     defaultNavigationOptions: {
-      headerTile: <Image source={logo} />
-
-    }
+      headerLayoutPreset: 'center',
+      headerTile: <Image source={logo} />,
+      headerStyle: {
+        backgroundColor: '#f5f5f5'
+      }
+    },
   })
 );
 
